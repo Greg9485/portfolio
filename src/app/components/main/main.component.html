@@ -1,0 +1,96 @@
+<div class="container">
+
+    <h2 class="center-align">Home</h2>
+   
+    <div class="row" >
+        <div class="col s4" *ngFor="let card of cards; let i = index;">
+            <div class="card">
+                <div class="card-image">    
+                    
+                    <img src="{{card.imgSource}}" alt="curry" >
+                </div>
+                <div class="card-content">
+                    <span class="card-title">{{card.title}}</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <!--app-software *ngIf="pageClick==1"></app-software>
+        <app-music *ngIf="pageClick==2"></app-music>      
+        <app-reading-list *ngIf="pageClick==3"></app-reading-list>
+        <app-writing *ngIf="pageClick==4"></app-writing>
+        <app-travel *ngIf="pageClick==5"></app-travel>
+        <app-health *ngIf="pageClick==6"></app-health>
+        <app-science *ngIf="pageClick==7"></app-science>
+        <app-other-interests *ngIf="pageClick==8"></app-other-interests>
+        <app-art *ngIf="pageClick==9"></app-art>
+        <!--app-main *ngIf="pageClick == null || pageClick == undefined"></app-main-->
+
+   
+
+<!-- contact form -->
+<section class="section container scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+                <p>Reach out if you have any needs you think I can help with.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+            
+        <div class="col s12 l5 offset-l2">
+            <form action="">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label>
+                </div>
+                
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                
+                <!--div class="input-field">
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for...</label>
+                </div-->
+                <div class="input-field">
+                    <p>Services required...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Software</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Other</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>	
+    </div>
+</section>	
+
+
+    
+<script>
+    $(document).ready(function(){
+        $('#demo-carousel-indicators').carousel({fullWidth: true});
+    })
+</script>
